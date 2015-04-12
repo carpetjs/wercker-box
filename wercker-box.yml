@@ -1,12 +1,12 @@
-name: safetychanger-node
-version: 2.1.0
+name: carpetjs-wercker-box
+version: 1.0.0
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
 platform: ubuntu@14.04
 packages:
   - nodejs@0.12.2
 description: |
-  Wercker box with Node.js 0.12.2 and MongoDB 3.0.2 running on Ubuntu 14.04
+  CarpetJS Wercker box with Node.js 0.12.2 and MongoDB 3.0.2 running on Ubuntu 14.04
 keywords:
   - node
   - nodejs
