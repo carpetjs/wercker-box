@@ -4,16 +4,16 @@ inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
 platform: ubuntu@14.04
 packages:
-  - nodejs@0.12.2
+  - nodejs@4.2.1
 description: |
-  CarpetJS Wercker box with Node.js 0.12.2 and MongoDB 3.0.2 running on Ubuntu 14.04
+  CarpetJS Wercker box with Node.js 4.x and MongoDB 3.x running on Ubuntu 14.04
 keywords:
   - node
   - nodejs
   - node.js
-  - 0.12
-  - nodejs 0.12
-  - node.js 0.12
+  - 4.2.1
+  - nodejs 4.2.1
+  - node.js 4.2.1
   - mongo
   - mongodb
   - mongodb 3.0.0
@@ -43,7 +43,7 @@ script: |
   export MONGODB_URL="mongodb://localhost:27017"
 
   #### Node.js
-  export NODEVERSION=0.12.2
+  export NODEVERSION=4.2.1
   sudo apt-get update
   sudo apt-get install wget build-essential
   cd $HOME
