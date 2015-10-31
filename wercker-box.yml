@@ -1,19 +1,18 @@
 name: carpetjs-wercker-box
-version: 1.1.0
+version: 1.2.0
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
 platform: ubuntu@14.04
 packages:
-  - nodejs@4.2.1
+  - nodejs@5.0.0
 description: |
-  CarpetJS Wercker box with Node.js 4.x and MongoDB 3.x running on Ubuntu 14.04
+  CarpetJS Wercker box with Node.js 5.x and MongoDB 3.x running on Ubuntu 14.04
 keywords:
   - node
   - nodejs
   - node.js
-  - 4.2.1
-  - nodejs 4.2.1
-  - node.js 4.2.1
+  - nodejs 5.x
+  - node.js 5.x
   - mongo
   - mongodb
   - mongodb 3.0.0
@@ -43,7 +42,7 @@ script: |
   export MONGODB_URL="mongodb://localhost:27017"
 
   #### Node.js
-  export NODEVERSION=4.2.1
+  export NODEVERSION=5.0.0
   sudo apt-get update
   sudo apt-get install wget build-essential
   cd $HOME
