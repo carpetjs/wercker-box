@@ -1,5 +1,5 @@
 name: carpetjs-wercker-box
-version: 1.4.0
+version: 1.5.0
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
 platform: ubuntu@14.04
@@ -22,7 +22,7 @@ keywords:
   - wercker
   - webessentials
 script: |
-  
+
   #### Init
   sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
   sudo apt-get update
@@ -42,7 +42,7 @@ script: |
   export MONGODB_URL="mongodb://localhost:27017"
 
   #### Node.js
-  export NODEVERSION=7.0.0
+  export NODEVERSION=7.10.0
   sudo apt-get update
   sudo apt-get install wget build-essential
   cd $HOME
